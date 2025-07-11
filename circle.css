@@ -1,0 +1,34 @@
+.rotating_disk {
+  right: 5px;
+  bottom: 5px;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: var(--weel_color);
+  opacity: 0.8;
+  animation: rotateDisk 10s linear infinite;
+  transform-origin: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.curved-text {
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg)
+}
+
+@keyframes rotateDisk {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.boxForRotate {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
